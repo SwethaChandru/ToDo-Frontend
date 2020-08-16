@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<mat-card >
+    <form [formGroup]="form"(submit)="onSignupForm()">
+        <h1 class="heading">signup</h1>
+        <mat-form-field>
+            <input matInput="text" formControlName="name" type="text"  name="name"  placeholder="username">
+            <mat-error *ngIf="form.get('name').invalid">Please enter valid input</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput="password" formControlName="password" type="password" placeholder="Password" >
+             <mat-error *ngIf="form.get('password').invalid">Please enter a valid password</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color='accent' type="submit">signup</button>
+
+    </form>
+</mat-card>

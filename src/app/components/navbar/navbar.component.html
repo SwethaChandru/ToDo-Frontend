@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <ul >
+      <li>
+        <a *ngIf="userIsAuth" mat-button routerLink="/task" routerLinkActive="mat-accent">ADD NEW TASK</a>
+      </li>
+      <li>
+        <a *ngIf="userIsAuth" mat-button routerLink="/schedule" routerLinkActive="mat-accent">SCHEDULE</a>
+      </li>
+      <li>
+          <a *ngIf="!userIsAuth" mat-button routerLink="/login" routerLinkActive="mat-accent">LOGIN</a>
+      </li>
+      <li>
+          <a *ngIf="!userIsAuth"  mat-button routerLink="/signup" routerLinkActive="mat-accent">SIGNUP</a>
+      </li>
+      <li>
+        <button style="margin-left: 1000px; box-shadow: none; background-color: transparent; color: white;" *ngIf="userIsAuth" mat-raised-button  (click)="logout()" type="submit">LOGOUT</button> 
+     </li>
+  </ul>
+</mat-toolbar>
+

@@ -1,0 +1,26 @@
+.vertical { 
+    border-left: 1px solid grey; 
+    height: 90vh; 
+    position:absolute; 
+    left: 50%; 
+} 
+.fsthalf
+{
+    margin: 0;
+    padding: 0px;
+    position: relative;
+}
+
+.fstcard
+{
+    height: 90vh;
+    width: 80vh;
+    margin-top: 50px;
+    margin-left: 80px;
+    background-color:ghostwhite
+}
+
+.date
+{
+    margin-left: 100px;
+}
